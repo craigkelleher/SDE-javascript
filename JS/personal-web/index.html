@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+        li {
+            display: inline;
+        }
+        #avatar {
+            border-radius: 30px 30px 50%;
+        }
+        .project-wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .fa-linkedin {
+            size: 200px;
+        }
+        .fa-github {
+            size: 200px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/8b30924d18.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Add a navigation Bar -->
+    <!-- Links: Home, Intro, Bio, Resume, Projects, Contact, Share Link -->
+    <!-- Share page link -->
+    <ul>
+        <li><a href="#home">Home</li></a>
+        <li><a href="#intro">Intro</li></a>
+        <li><a href="#bio">Bio</li></a>
+        <li><a href="#resume">Resume</li></a>
+        <li><a href="#projects">Project</li></a>
+        <li><a href="#contact">Contact</li></a>
+    </ul>
+    <!-- Add a greeting/Splash Intro -->
+    <section id="intro">
+        <div>
+            <h1>Intro</h1>
+                <p>
+                    Welcome to my portfolio
+                </p>
+        </div>
+    </section>
+    <!-- Add Bio/pic -->
+    <section id="bio">
+        <div>
+            <h1>Bio</h1>
+                <p>
+                    <a href="https://www.google.com">
+                         <img id="avatar" src="images/craig_small.png" alt="Profile Photo"/>
+                    </a>
+                    <br>My name is Craig Kelleher
+                    <br>I am a pre-apprentice software development engineer at TLG Learning. 
+                    <br>The following are some projects I have built or contributed to:
+                </p>
+        </div>
+    </section>
+    <!-- Resume -->
+    <section id="resume">
+    <div>
+        <h1></h1>
+            <p>
+            
+            </p>
+    </div>
+    </section>
+    <!-- Links to projects -->
+    <section id="projects">
+        <div class="project-wrapper">
+            <a href="https://developer.cloud.unity3d.com/webgl/webgl.html?shareId=bJtPSJAaBd">
+                <div>
+                    <h2>History Cards</h2>
+                    <img src="images/cards.png" />
+                    <p> Trading card game built in C#
+                    </p>
+                </div>
+            </a>
+            
+            <a href="https://github.com/craigkelleher/SuperTasks">
+            <div>  
+                <h2>Project Management </h2>
+                <img src="images/projectmgmt.png" />
+                <p> Asana-like project management app
+                </p>
+            </div>
+            </a>
+
+            <a href="https://github.com/ElihuJones/pigs-and-bulls">
+            <div>  
+                <h2>Pigs And Bulls</h2>
+                <img src="images/pigsandbulls.png" />
+                <p> Group Project for the Pigs and Bulls Game
+                </p>
+            </div>
+            </a>
+            
+        </div>
+    </section>
+    <!-- C# History Card Game -->
+    <!-- Task Management App -->
+    <!-- Java Android Weather App -->
+    <!-- Java Pigs and Bulls Console Game -->
+    <!-- Add a footer -->
+    <footer>
+        <a href="https://linkedin.com/in/craigkelleher">
+            <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/craigkelleher"> 
+            <i class="fa-brands fa-github"></i></a>
+    </footer>
+    <!-- Link to social -->
+</body>
+
+</html>
