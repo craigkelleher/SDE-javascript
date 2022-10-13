@@ -1,0 +1,16 @@
+/* Positioned relative to nearest positioned ancestor, instead of viewport. 
+Absolute positioned elements can overlap other elements.*/
+#para2{
+    border: 1px solid red;
+    position: absolute;
+    top: 0px;
+}
+
+/* if an element has no nearest positioned relatives
+it will be positioned closest to the body like above */
+body{
+    border:1px solid teal;
+    /* if this is not commented, red box will follow positioned body ancestor */
+    /* position: relative; */ 
+    margin-top: 100px;
+}
