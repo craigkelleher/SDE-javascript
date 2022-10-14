@@ -2,6 +2,10 @@ p {
     /* border: 1px solid teal;
     padding: 5px; */
 
-    height: 20px;
     box-sizing: border-box;
+    margin: 5px 25px 40px 60px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    padding: 5px;
 }

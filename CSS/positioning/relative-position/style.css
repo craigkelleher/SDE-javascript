@@ -41,7 +41,7 @@ Absolute positioned elements can overlap other elements.*/
 /* Based on user's scroll position, however doesnt work in edge*/
 #sticky{
     position: sticky;
-    top: 0;
+    top: 30px;
     background-color: grey;
     border: 2px solid Orange;
 }
