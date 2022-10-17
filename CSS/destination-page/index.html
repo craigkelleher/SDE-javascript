@@ -23,10 +23,76 @@
     <header id="header">
       <!-- place navbar here -->
       <h2>Vacation Destinations WishList</h2>
-      <p>Found exciting places to visit on your next vacation? Use the form below to add them to your wishlist</p>
+      <p class="p-header">
+        Found exciting places to visit on your next vacation? Use the form below
+        to add them to your wishlist
+      </p>
     </header>
     <main>
-
+      <div class="container">
+        <div class="row">
+          <!--First Column-->
+          <div class="col-md-4" id="col-1">
+            <div id="col-1a">
+              <form action=""></form>
+              <fieldset id="form-1">
+                <div class="row" id="row-1a">
+                  <label for="destination">
+                    Destination name<br />
+                    <input
+                      id="destination"
+                      type="text"
+                      placeholder="Enter the name of the destination"
+                    /> </label
+                  ><br />
+                </div>
+                <div class="row" id="row-1a">
+                  <label for="location">
+                    Location<br />
+                    <input
+                      id="location"
+                      type="text"
+                      placeholder="Where is it located?"
+                    /> </label
+                  ><br />
+                </div>
+                <div class="row" id="row-1a">
+                  <label for="photo">
+                    Photo<br />
+                    <input
+                      id="photo"
+                      type="photo"
+                      placeholder="Enter an image url of the place"
+                    /> </label
+                  ><br />
+                </div>
+                <div class="row" id="row-1a">
+                  <label for="description">
+                    Description<br />
+                    <input
+                      id="description"
+                      type="text"
+                      placeholder="Where is it located?"
+                    />
+                  </label>
+                </div>
+              </fieldset>
+              <div class="row" id="row-1a">
+              <input type="button" value="Add to list" id="button" />
+            </div>
+            </div>
+          </div>
+          <!--Second Column-->
+          <div class="col-md-4" id="col-2">
+            <div class="col-md-4" id="row-1">
+              <p id="destination-details">Enter destination details</p>
+            </div>
+            <div class="col-md-4" id="row-2">
+              <!--Things-->
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <!-- place footer here -->
