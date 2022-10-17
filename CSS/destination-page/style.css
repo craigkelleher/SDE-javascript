@@ -43,6 +43,7 @@ h2{
     border: 6px solid rgb(129, 237, 41);
     margin: 4px; 
     text-align: center;
+    max-height: 500px;
 }
 
 #col-1{
@@ -51,6 +52,8 @@ h2{
     width: 49%;
     margin: 5px; 
     text-align: left;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 #col-1a{
@@ -90,11 +93,13 @@ h2{
     margin-bottom: 5px;
     float: left;
     width:100%;
+    max-height: 190px;
 }
 
 #row-2{
     border: 6px solid rgb(237, 230, 41);
     height: 400px;
+    max-height: 400px;
     width: auto;
     margin: 0px;
     padding-bottom: 0px;
