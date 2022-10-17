@@ -5,6 +5,7 @@
 .row>*{
     padding-right: 0;
     padding-left: 0;
+    flex: 1 1 auto;
 }
   
 body{
@@ -33,6 +34,8 @@ h2{
     text-align: center;
     border-width: 5px;
     width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0);
+    padding-left: calc(var(--bs-gutter-x) * 2.0);
 }
 
 .row{
@@ -43,7 +46,6 @@ h2{
     border: 6px solid rgb(129, 237, 41);
     margin: 4px; 
     text-align: center;
-    max-height: 500px;
 }
 
 #col-1{
@@ -96,10 +98,13 @@ h2{
     max-height: 190px;
 }
 
+input {
+    width:100%;
+}
+
 #row-2{
     border: 6px solid rgb(237, 230, 41);
     height: 400px;
-    max-height: 400px;
     width: auto;
     margin: 0px;
     padding-bottom: 0px;
@@ -122,10 +127,7 @@ h2{
     padding-top: 0.5em;
 }
 
-input {
-    max-width: 100%;
-    min-width: 100%;
-}
+
 
 Label{
     padding: 0.15em;
