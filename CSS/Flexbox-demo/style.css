@@ -1,0 +1,17 @@
+/* div{
+    border: 2px dashed green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} */
+
+p{
+    border: 1px solid blue;
+    width: 200px;
+    height: 160px;
+}
+
+/* section{
+    display: flex;
+    overflow-x: scroll;
+} */
