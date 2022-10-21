@@ -88,66 +88,88 @@
       };
 
       // console log the title of the book
-      // YOUR CODE GOES HERE
       console.log(hikingBermuda.title);
 
       // console log the author of the book
-      // YOUR CODE GOES HERE
       console.log(hikingBermuda.author);
 
       // console log the price of the book with $ sign in front of it
-      // YOUR CODE GOES HERE
+      console.log("book price: $", hikingBermuda.price);
 
-      // console log the number of chapters in the Preface section
-      // YOUR CODE GOES HERE
+      //console log the number of chapters in the Preface section
+      console.log(
+        "Number of chapters in Preface:",
+        hikingBermuda.sections[0].chapters.length
+      );
 
       // console log the number of chapters in the Introduction section
-      // YOUR CODE GOES HERE
+      console.log(
+        "Number of chapters in Introduction:",
+        hikingBermuda.sections[1].chapters.length
+      );
 
       // console log the number of chapters in the West End section
-      // YOUR CODE GOES HERE
+      console.log(
+        "Number of chapters in West End:",
+        hikingBermuda.sections[2].chapters.length
+      );
 
       // console log the name of the 4th trail
-      // YOUR CODE GOES HERE
+      console.log("Name of the 4th trail:", hikingBermuda.trails[3].name);
 
       // console log the page of the 3rd trail
-      // YOUR CODE GOES HERE
-
+      console.log("Name of the 3rd trail:", hikingBermuda.trails[2].name);
       // console log the section of the 2nd trail
-      // YOUR CODE GOES HERE
+      console.log("Name of the 2nd trail:", hikingBermuda.trails[1].name);
 
       // console log the rating of the 1st trail
-      // YOUR CODE GOES HERE
+      console.log("Name of the 1st trail:", hikingBermuda.trails[0].name);
 
       // console log only trails that are at least 4.0 miles
-      // YOUR CODE GOES HERE
-      const trails = hikingBermuda.trails;
-      const longTrails = [];
+      // const trails = hikingBermuda.trails;
+      // const longTrails = [];
 
-      for (const trail of trails) {
-        if (trail.distanceInMiles >= 4.0) {
-          longTrails.push(trail);
-        }
-      }
-      console.table(longTrails);
+      // for (const trail of trails) {
+      //   if (trail.distanceInMiles >= 4.0) {
+      //     longTrails.push(trail);
+      //   }
+      // }
+      // console.table(longTrails);
+      // cont trails = hikingBermuda.trails;
+
+      console.log(
+        hikingBermuda.trails.filter((trail) => trail.distanceInMiles >= 4.0)
+      );
 
       // console log only trails that are at most 4.0 miles
-      // YOUR CODE GOES HERE
+      console.log(
+        hikingBermuda.trails.filter((trail) => trail.distanceInMiles <= 4.0)
+      );
 
       // console log only trails on the West End
-      // YOUR CODE GOES HERE
+      console.log(
+        hikingBermuda.trails.filter((trail) => trail.section === "West End")
+      );
 
       // console log only trails on the East End
-      // YOUR CODE GOES HERE
+      console.log(
+        hikingBermuda.trails.filter((trail) => trail.section === "East End")
+      );
 
       // console log only moderate trails
-      // YOUR CODE GOES HERE
+      console.log(
+        hikingBermuda.trails.filter((trail) => trail.rating === "Moderate")
+      );
 
       // console log only easy trails
-      // YOUR CODE GOES HERE
+      console.log(
+        hikingBermuda.trails.filter((trail) => trail.rating === "Easy")
+      );
 
       // console log only hardy trails
-      // YOUR CODE GOES HERE
+      console.log(
+        hikingBermuda.trails.filter((trail) => trail.rating === "Hardy")
+      );
     </script>
   </body>
 </html>
