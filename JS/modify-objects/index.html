@@ -95,11 +95,14 @@
 
       // console log the price of the book with $ sign in front of it
       console.log("book price: $", hikingBermuda.price);
+      // const formattedPrice = "$" + hikingBermuda.price
+      // const formattedPrice = `$ ${hikingBermuda.price}`
+      // console.log(formattedPrice);
 
       //console log the number of chapters in the Preface section
       console.log(
         "Number of chapters in Preface:",
-        hikingBermuda.sections[0].chapters.length
+        hikingBermuda.sections["0"].chapters.length
       );
 
       // console log the number of chapters in the Introduction section
@@ -135,9 +138,20 @@
       //   }
       // }
       // console.table(longTrails);
-      // cont trails = hikingBermuda.trails;
 
-      console.log(
+
+      const trails = hikingBermuda.trails;
+      const longTrails = [];
+          
+      for (let index = 0; index < trails.length; index++){
+            const trail = trails[index];
+            if(trail.distanceinMiles >= 4.0){
+                  longTrails.push(trail)
+            }
+      }
+      console.table(longTrails);
+
+      console.table(
         hikingBermuda.trails.filter((trail) => trail.distanceInMiles >= 4.0)
       );
 
