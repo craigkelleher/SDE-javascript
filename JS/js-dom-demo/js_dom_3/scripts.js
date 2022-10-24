@@ -16,14 +16,14 @@ E.g document.body.style.marginBottom = "2px" changes the "margin-bottom" of the 
 debugger;
 
 // YOUR CODE GOES HERE
-// const bodyStyle = document.body.style;
-// bodyStyle.height = "100vh";
-// bodyStyle.borderLeft = "2px dashed blue";
-// bodyStyle.borderRight = "2px dashed red";
-// bodyStyle.borderLeftWidth = "0px 2px";
-// bodyStyle.borderStyle = "none dashed";
-// bodyStyle.borderLeftColor = "blue";
-// bodyStyle.borderRightColor = "red";
+const bodyStyle = document.body.style;
+bodyStyle.height = "100vh";
+bodyStyle.borderLeft = "2px dashed blue";
+bodyStyle.borderRight = "2px dashed red";
+bodyStyle.borderLeftWidth = "0px 2px";
+bodyStyle.borderStyle = "none dashed";
+bodyStyle.borderLeftColor = "blue";
+bodyStyle.borderRightColor = "red";
 
 /*
 BONUS:

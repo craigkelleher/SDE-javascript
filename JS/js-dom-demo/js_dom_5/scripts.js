@@ -101,14 +101,11 @@ while (wantsToCreateParagraph) {
 
 function getRandomHexColor() {
   let hexChars = "0123456789ABCDEF";
-
   let randomColor = "#";
 
   for (let index = 0; index < 6; index++) {
     let randomHexCharIdx = Math.floor(Math.random() * hexChars.length);
-
     let randomHexChar = hexChars[randomHexCharIdx];
-
     randomColor += randomHexChar;
   }
 
