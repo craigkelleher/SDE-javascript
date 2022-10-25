@@ -13,6 +13,8 @@ E.g document.getElementsByTagName("p") returns a list of all <p> elements
 // YOUR CODE GOES HERE
 const h1Element = document.getElementsByTagName("header");
 h1Element.innerHTML = "It was dynamically created with JS";
+//innerTEXT
+
 //type h1Element in console
 /*****************************************************************
 DO THIS BEFORE YOU MOVE ON TO THE NEXT ACTIVITY:
