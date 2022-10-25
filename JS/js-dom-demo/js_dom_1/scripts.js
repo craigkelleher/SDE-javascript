@@ -16,6 +16,7 @@ const firstParagraph = document.getElementById("empty_paragraph");
 const contents1 = "This paragraph content was added using Javascript";
 firstParagraph.innerHTML = contents1;
 
+document.getElementById("empty_paragraph"), innerText = "This paragraph content was added using Javascript";
 
 /*****************************************************************
 DO THIS BEFORE YOU MOVE ON TO THE NEXT ACTIVITY:
@@ -25,6 +26,10 @@ Look up the methods/properties above and make sure you understand what they do
 /*
 BONUS:
 - Can you find another way to select an element using it's id other than using the getElementById() method?
+//query sel[ector
+document.body.querySelector("#empty_paragraph") // nothing.
+document.querySelector("#empty_paragraph")
+
 const thing = document.querySelector(".something")
 - Can you find better ways to get or set the text within an element instead of using innerHTML?
 */
