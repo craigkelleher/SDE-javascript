@@ -17,33 +17,74 @@
     />
     <!-- Personal CSS -->
     <link rel="stylesheet" href="./style.css" />
-    <title>tenor Gifs</title>
+    <title>Destination Wishlist</title>
   </head>
+
   <body>
-    <form id="user_input_form" action="" onsubmit="return false">
-      <input
-        type="text"
-        name="search_term"
-        id="card_title"
-        placeholder="Enter search"
-      />
-      <input
-        type="text"
-        name=""
-        id="card_text"
-        placeholder="Enter card title"
-      />
-      <input
-        type="url"
-        name=""
-        id="card_photo"
-        placeholder="Enter card photo url"
-      />
-      <input type="submit" value="Search" />
-    </form>
+    <header id="header">
+      <!-- place navbar here -->
+      <h2>Vacation Destinations WishList</h2>
+      <p class="p-header">
+        Found exciting places to visit on your next vacation? Use the form below
+        to add them to your wishlist. Created by Craig Kelleher
+      </p>
+    </header>
 
-    <div id="cards_container"></div>
-
+    <div class="container">
+      <div class="row gx-5">
+        <!--First Column-->
+        <div class="col-md-4" id="col-1">
+          <form id="user_input_form" action="" onsubmit="return false">
+            <label for="destination">
+              Destination name <br />
+              <input
+                type="text"
+                name=""
+                id="card_title"
+                placeholder="Enter Destination Name"
+              />
+            </label>
+            <br />
+            <label for="location">
+              Location <br />
+              <input
+                type="text"
+                name=""
+                id="card_text"
+                placeholder="Where is it located?"
+              />
+            </label>
+            <br />
+            <label for="photo">
+              Photo<br />
+              <input
+                type="url"
+                name=""
+                id="card_photo"
+                placeholder="Enter an image url"
+              />
+            </label>
+            <br />
+            <label for="rowdescription">
+              Description <br />
+              <textarea id="row-description" placeholder="Where is it located?">
+              </textarea>
+            </label>
+            <br />
+            <input
+              type="submit"
+              value="Add to Destination List"
+              id="submitButton"
+            />
+          </form>
+        </div>
+        <!--Second Column-->
+        <div class="col-md-4" id="col-2" style="padding: 5px">
+          <!--Things-->
+          <div class="col-mid-4" id="cards_container"></div>
+        </div>
+      </div>
+    </div>
     <!-- JavaScript, jQuery, Popper.js scripts. -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

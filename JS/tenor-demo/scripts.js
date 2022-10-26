@@ -29,6 +29,9 @@ user_input_form.addEventListener("submit", (txg) =>{
     //append child
     card.appendChild(cardPhoto);
 
+    //append to card container
+    cards_container.append(card);   
+
     
     // card.setAttribute("class", "firstCardClass");
     // card.setAttribute("class", "secondCardClass");
@@ -44,7 +47,7 @@ user_input_form.addEventListener("submit", (txg) =>{
     </div>
     */
 
-//append the new bootstrap card to container, change para_container to cards_container
+//append the new bootstrap card to container,
 
     // const userInputValue = search_term.value;
 
@@ -64,7 +67,6 @@ user_input_form.addEventListener("submit", (txg) =>{
 // user_input_form.onsubmit = () =>{
 //     alert("Hi there, I see you")
 // }
-//append to card container
-cards_container.append(card);
+
 
 });
