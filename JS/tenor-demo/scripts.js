@@ -4,6 +4,17 @@ when form#user_input_form is submitted, use the form's card title, text, and pho
  */
 
 // Add submit event listener to form#user_input_form
+//document.querySelector("#user_input_form")
+//document.getElementById("user_input_form")
+
+//const user_input_form = document.querySelector("#user_input_form")
+//or
+// user_input_form.
+
+//user_input_form.addEventListener("eventType", callbackfunction)
+//or
+//user_input_form.oneventtype = callbackfunction
+
 user_input_form.addEventListener("submit", (txg) =>{
     txg.preventDefault();
     //get the form's input text
@@ -16,7 +27,7 @@ user_input_form.addEventListener("submit", (txg) =>{
 
 
     //use above values to create bootstrap card, consider using classList
-    const card = document.createElement("div"); //create a div
+    const card_container = document.createElement("div"); //create a div
     card.classList.add("card");
     card.setAttribute("style", "width: 18rem;");
 
@@ -30,7 +41,7 @@ user_input_form.addEventListener("submit", (txg) =>{
     card.appendChild(cardPhoto);
 
     //append to card container
-    cards_container.append(card);   
+    card_container.append(card);   
 
     
     // card.setAttribute("class", "firstCardClass");
